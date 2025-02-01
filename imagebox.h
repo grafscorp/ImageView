@@ -8,6 +8,10 @@
 #include <QWidget>
 #include <QLabel>
 #include <QFileInfo>
+#include <QList>
+#include <QStringList>
+#include <QDir>
+#include <imagelistbutton.h>
 namespace Ui {
 class ImageBox;
 }
@@ -25,6 +29,14 @@ private:
     Ui::ImageBox *ui;
     QString imagePath;
     QPixmap *pixmap;
+    QList<QFileInfo> imageFilesInPath;
+
+    bool allImageShowed = false;
+
+    void updateImagePath(QString imagePath);
+    void updateStateImageAll();
+
+
 
 public:
     void loadPixmap(QString newImagePath);
