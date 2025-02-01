@@ -2,7 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLabel>
+#include <QFile>
+#include <QFileDialog>
 
+
+#include <imagebox.h>
+#include <loadfileform.h>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -19,5 +25,11 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    ImageBox* imagebox;
+    LoadFileForm* loadFileForm;
+
+    void loadImage(QString filePath);
+private slots:
+    void openFile();
 };
 #endif // MAINWINDOW_H
