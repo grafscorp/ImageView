@@ -10,17 +10,20 @@ CONFIG += c++17
 
 SOURCES += \
     imagebox.cpp \
+    imagelistbutton.cpp \
     loadfileform.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     imagebox.h \
+    imagelistbutton.h \
     loadfileform.h \
     mainwindow.h
 
 FORMS += \
     imagebox.ui \
+    imagelistbutton.ui \
     loadfileform.ui \
     mainwindow.ui
 
