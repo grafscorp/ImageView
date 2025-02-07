@@ -36,7 +36,6 @@ void ImageBox::updateImagePath(QString newImagePath)
 
     for (int i= 0; i < imageFilesInPath.size(); ++i) {
         ImageListButton* newImageInPath = new ImageListButton(imageFilesInPath.at(i).filePath());
-        //newImageInPath->setVisible(allImageShowed);
         ui->all_images_HBOX->addWidget(newImageInPath);
     }
 }
